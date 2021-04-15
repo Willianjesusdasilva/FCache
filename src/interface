@@ -7,12 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     </head>
     <body>
-        <script>
-            const params = new URLSearchParams(document.location.search);
-            const ip = params.get("ip");
-            
-        </script>
-              <button type="submit" onclick="get_data(ip,'/printa')" id="but">Print</button>
+              <button type="submit" onclick="get_data({{ip}},'/printar')" id="but">Print</button>
         <script>
         
                 function get_data (ip, rota){
