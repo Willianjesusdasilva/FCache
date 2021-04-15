@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <script>
+            const params = new URLSearchParams(document.location.search);
+            const ip = params.get("ip");
+            
+        </script>
+              <button type="submit" onclick="get_data(ip,'/printa')" id="but">Print</button>
+        <script>
+        
+                function get_data (ip, rota){
+                    var finalURL = "http://"+ ip + rota;
+                    $.ajax({
+                     url: finalURL,
+                     method: 'get',
+                    success: function (data) {
+                      console.log(finalURL)
+                    },
+                    error: function (data) {
+                        console.log(data);
+                    }
+                });
+                }
+             
+                </Script>
+    </body>
+</html>
