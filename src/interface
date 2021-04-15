@@ -7,13 +7,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     </head>
     <body>
-              <button type="submit" onclick="get_data('{{ip}}', '/printar')" id="but">Print</button>
+              <button type="submit" onclick="get_data('../printar/')" id="but">Print</button>
         <script>
         
-                function get_data (ip, rota){
-                    var finalURL = "http://"+ ip + rota;
+                function get_data (rota){
                     $.ajax({
-                     url: finalURL,
+                     url: rota,
                      method: 'get',
                     success: function (data) {
                       console.log(finalURL)
