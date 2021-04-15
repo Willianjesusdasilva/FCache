@@ -15,7 +15,7 @@
                      url: rota,
                      method: 'get',
                     success: function (data) {
-                      console.log(finalURL)
+                      console.log(data)
                     },
                     error: function (data) {
                         console.log(data);
