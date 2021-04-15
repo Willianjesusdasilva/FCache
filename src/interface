@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     </head>
     <body>
-              <button type="submit" onclick="get_data('../printa/')" id="but">Print</button>
+              <button type="submit" onclick="get_data('../cleardata/')" id="but">Print</button>
         <script>
         
                 function get_data (rota){
