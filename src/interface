@@ -26,8 +26,8 @@
             .window .handle {
             height: 22px;
             background: linear-gradient(0deg, #d8d8d8, #ececec);
-            border-top: 1px solid white;
-            border-bottom: 1px solid #b3b3b3;
+            border-top: 0px solid white;
+            border-bottom: 0px solid #b3b3b3;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             color: rgba(0, 0, 0, 0.7);
@@ -37,11 +37,13 @@
             text-align: center;
             }
             .window .buttons {
+            outline: none;
             position: absolute;
             float: left;
             margin: 0 8px;
             }
             .window .buttons .close {
+            outline: none;
             background-color: #ff6159;
             }
 
@@ -99,10 +101,10 @@
             }
 
             .list {
-            height: 438px;
+            height: 450px;
             background-color: #4d4d4d;
-            max-height: 438px;
-            min-height: 438px;
+            max-height: 450px;
+            min-height: 450px;
             overflow:auto;
             }
 
