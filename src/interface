@@ -43,6 +43,7 @@
             }
             .window .buttons .close {
             background-color: #ff6159;
+            outline: none;
             }
 
         /* width */
