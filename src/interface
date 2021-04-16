@@ -140,6 +140,10 @@
                      url: rota,
                      method: 'get',
                     success: function (data) {
+                      const myNode = document.getElementById("list");
+  while (myNode.lastElementChild) {
+    myNode.removeChild(myNode.lastElementChild);
+  }
                         for (var i in data) {
                             var node = document.createElement("P");
                             var textnode = document.createTextNode(data[i]['file']);
