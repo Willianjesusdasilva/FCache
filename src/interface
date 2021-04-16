@@ -92,12 +92,10 @@
             line-height: 1;
             min-height: 100%;
             position: relative;
-            background-color: #3c3c3c;
             }
 
             html {
             min-height: 100%;
-            background-color: #3c3c3c;
             }
 
             .list {
@@ -115,7 +113,7 @@
             }
         </style>
     </head>
-    <body>
+    <body class="bg-dark">
             <div class="window">
                     <div class="handle">
                             <div class="buttons">
@@ -140,10 +138,6 @@
                      url: rota,
                      method: 'get',
                     success: function (data) {
-                      const myNode = document.getElementById("list");
-  while (myNode.lastElementChild) {
-    myNode.removeChild(myNode.lastElementChild);
-  }
                         for (var i in data) {
                             var node = document.createElement("P");
                             var textnode = document.createTextNode(data[i]['file']);
