@@ -28,8 +28,8 @@
             background: linear-gradient(0deg, #d8d8d8, #ececec);
             border-top: 1px solid white;
             border-bottom: 1px solid #b3b3b3;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
             color: rgba(0, 0, 0, 0.7);
             font-family: Helvetica, sans-serif;
             font-size: 13px;
@@ -99,10 +99,10 @@
             }
 
             .list {
-            height: 450px;
+            height: 438px;
             background-color: #4d4d4d;
-            max-height: 450px;
-            min-height: 450px;
+            max-height: 438px;
+            min-height: 438px;
             overflow:auto;
             }
 
