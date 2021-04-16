@@ -28,8 +28,8 @@
             background: linear-gradient(0deg, #d8d8d8, #ececec);
             border-top: 1px solid white;
             border-bottom: 1px solid #b3b3b3;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             color: rgba(0, 0, 0, 0.7);
             font-family: Helvetica, sans-serif;
             font-size: 13px;
@@ -43,7 +43,6 @@
             }
             .window .buttons .close {
             background-color: #ff6159;
-            outline: none;
             }
 
         /* width */
@@ -100,10 +99,10 @@
             }
 
             .list {
-            height: 428px;
+            height: 450px;
             background-color: #4d4d4d;
-            max-height: 428px;
-            min-height: 428px;
+            max-height: 450px;
+            min-height: 450px;
             overflow:auto;
             }
 
@@ -113,7 +112,7 @@
             <div class="window">
                     <div class="handle">
                             <div class="buttons">
-                                    <button class="close">
+                                    <button class="close" onclick="get_data('../close/')">
                                     </button>
                             </div>
                             <span class="title">FCache</span>
