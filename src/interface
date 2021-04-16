@@ -99,10 +99,10 @@
             }
 
             .list {
-            height: 438px;
+            height: 430px;
             background-color: #4d4d4d;
-            max-height: 438px;
-            min-height: 438px;
+            max-height: 430px;
+            min-height: 430px;
             overflow:auto;
             }
 
