@@ -139,6 +139,10 @@
                      method: 'get',
                     success: function (data) {
                         for (var i in data) {
+                            const myNode = document.getElementById("list");
+                            while (myNode.firstChild) {
+                            myNode.removeChild(myNode.lastChild);
+                            }
                             var node = document.createElement("P");
                             var textnode = document.createTextNode(data[i]['file']);
                             var classnode = document.createAttribute("class")
